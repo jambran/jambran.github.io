@@ -1,30 +1,34 @@
 // Skills icons - https://react-icons.github.io/react-icons/
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaReact,
   FaGitAlt,
   FaGithubSquare,
   FaLink,
+  FaPython,
+  FaAws,
+  FaJava,
 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
+import {
+  SiJavascript,
+  SiPytorch,
+  SiPytorchlightning, SiTensorflow,
+} from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+import AITA from "./images/AITA.jpeg";
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import LightBackground from "./images/snowboarding-light.jpg";
+import DarkBackground from "./images/hero-dark.jpg";
 // If you change the import names above then you need to change the export names below
-export { HeroLight as Light };
-export { HeroDark as Dark };
+export { LightBackground as Light };
+export { DarkBackground as Dark };
 
 /* START HERE
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "jambran";
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -34,7 +38,7 @@ export const Blog = <FaLink />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "I train neural models to understand language. Sometimes they're pretty good.";
 
 /* Skills
  ************************************************************** 
@@ -43,48 +47,48 @@ export const moreInfo =
 export const skillData = [
   {
     id: 1,
-    skill: <FaHtml5 className="display-4" />,
-    name: "HTML5",
+    skill: <FaPython className="display-4" />,
+    name: "Python",
   },
   {
     id: 2,
-    skill: <FaCss3Alt className="display-4" />,
-    name: "CSS3",
+    skill: <SiPytorch className="display-4" />,
+    name: "Pytorch",
   },
   {
     id: 3,
-    skill: <SiJavascript className="display-4" />,
-    name: "JavaScript",
+    skill: <SiPytorchlightning className="display-4" />,
+    name: "Pytorch Lightning",
   },
   {
     id: 4,
-    skill: <FaBootstrap className="display-4" />,
-    name: "BootStrap",
+    skill: <SiTensorflow className="display-4" />,
+    name: "Tensorflow",
   },
   {
     id: 5,
-    skill: <FaReact className="display-4" />,
-    name: "React",
+    skill: <FaAws className="display-4" />,
+    name: "AWS Sagemaker",
   },
   {
     id: 6,
-    skill: <SiStyledcomponents className="display-4" />,
-    name: "Styled Components",
-  },
-  {
-    id: 7,
-    skill: <SiRedux className="display-4" />,
-    name: "Redux",
-  },
-  {
-    id: 8,
     skill: <FaGitAlt className="display-4" />,
     name: "Git",
   },
   {
-    id: 9,
+    id: 7,
     skill: <FaGithubSquare className="display-4" />,
     name: "GitHub",
+  },
+  {
+    id: 8,
+    skill: <FaJava className="display-4" />,
+    name: "Java",
+  },
+  {
+    id: 9,
+    skill: <SiJavascript className="display-4" />,
+    name: "JavaScript",
   },
 ];
 
@@ -95,13 +99,13 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["ml-depression-classification", "asshole-classifier", "machine-learning-in-python"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "asshole-classifier",
+    image: AITA,
   },
 ];
 
